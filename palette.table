@@ -1,0 +1,6 @@
+{
+  NibFile = "TestPalette";
+  Class = "TestPalette";
+  Icon = "TestPalette";
+  ExportClasses = ("TestView","TestNonUIObject");
+}
