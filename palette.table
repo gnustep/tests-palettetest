@@ -3,4 +3,5 @@
   Class = "TestPalette";
   Icon = "TestPalette";
   ExportClasses = ("TestView","TestNonUIObject");
+  ExportImages = ("TestNonUIObject");
 }
