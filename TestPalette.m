@@ -19,12 +19,6 @@ static NSImage *image = nil;
 @implementation TestNonUIObject (IBObjectProtocol)
 - (NSImage *)imageForViewer
 {
-  /*
-  NSBundle *bundle = [NSBundle mainBundle];
-  NSString *path = [bundle pathForImageResource: @"TestNonUIObject"];
-  NSImage  *image = [[NSImage alloc] initWithContentsOfFile: path];
-  NSLog(@"path = %@",path);
-  */
   return image;
 }
 @end
@@ -37,7 +31,6 @@ static NSImage *image = nil;
     {
       NSBundle *bundle = [NSBundle bundleForClass: [self class]];
       NSString *path = [bundle pathForImageResource: @"TestNonUIObject"];
-      NSLog(@"path = %@",path);
       image = [[NSImage alloc] initWithContentsOfFile: path];
     }
 }
